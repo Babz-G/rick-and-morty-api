@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header-content">
+      <img
+        src="https://wallpapers.com/images/high/mr-meeseeks-hands-up-xf77m0cy83vjo5u4.webp"
+        alt="Mr. Meeseeks"
+        class="meeseeks-img"
+      />
+      <h1>I'm Mr. Meeseeks!</h1>
+      <!--   <p class="tagline">I'm here to help you learn about Rick and Morty characters!</p> -->
+    </div>
+
+    <div class="meeseeks-form">
+      <form id="form">
+        <h3>I'm here to help you learn about Rick and Morty characters!</h3>
+        <br /><label for="character"
+          >Select a character to learn about
+          <span style="color: red">*</span></label
+        >
+        <select name="type" id="character" aria-required="true">
+          <option value="select">--Select one--</option>
+          <option value="rick">Rick</option>
+          <option value="morty">Morty</option>
+          <option value="summer">Summer</option>
+          <option value="beth">Beth</option>
+          <option value="jerry">Jerry</option>
+        </select>
+        <button type="submit">Let's do it!</button>
+      </form>
+    </div>
+
+    <div class="container"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
