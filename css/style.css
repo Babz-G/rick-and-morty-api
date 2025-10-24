@@ -11,13 +11,16 @@ html {
 }
 
 :root {
-  --lightblue: #e3e9f0;
-  --orange: #f19389;
-  --black: #333333;
   --white: #ffffff;
+  --pink: #f19389;
+  --marigold: #ffc107;
+  --orange: #f19389;
+  --mintGreen: #97fb9b;
+  --lightblue: #e3e9f0;
   --teal: #e3e9f0;
   --darkteal: #163080;
   --meeseeks-blue: #5dc9e2;
+  --black: #333333;
   --radius: 8px;
   --font-size: 1rem;
 }
@@ -38,7 +41,6 @@ body {
 
 h1 {
   color: var(--meeseeks-blue);
-  margin: 0 0 1rem 0;
   font-size: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   background-color: var(--white);
@@ -53,7 +55,7 @@ h1 {
   height: auto;
   margin: 0 auto 1.5rem auto;
   display: block;
-  border: 3px solid #000;
+  border: 3px solid var(--black);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -66,12 +68,12 @@ h3 {
 }
 
 .meeseeks-form {
-  background-color: #ffffff;
-  border: 3px solid #000;
+  background-color: var(--white);
+  border: 3px solid var(--black);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   padding: 2rem 3rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
   box-sizing: border-box;
 }
@@ -179,16 +181,16 @@ select:focus {
 }
 
 .status.alive {
-  background-color: #97fb9b;
+  background-color: var(--mintGreen);
   color: #155724;
 }
 
 .status.dead {
-  background-color: #f19389;
+  background-color: var(--pink);
   color: #721c24;
 }
 
 .status.unknown {
-  background-color: #ffc107;
+  background-color: var(--marigold);
   color: #856404;
 }
